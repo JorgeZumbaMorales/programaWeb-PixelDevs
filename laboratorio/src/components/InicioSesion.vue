@@ -1,22 +1,18 @@
 <template>
-    <div class="Hello">
-      <h1>{{ msg }}</h1>
-      <p>
-        Sistema de Reserva y Gestión de Laboratorios de Computación
-      </p>
+    <div class="InicioSesion">
+      <h1>{{ msg1 }}</h1>
+      <p>Sistema de Reserva y Gestión de Laboratorios de Computación</p>
       <ul>
-        <li><a href="./components/InicioSesion.vue" target="_blank" rel="noopener">Iniciar Sesión</a></li>
-        <li><a href="./components/Registrarse.vue" target="_blank" rel="noopener">Registrarse</a></li>
+        <li><router-link to="/inicio-sesion">Iniciar Sesión</router-link></li>
       </ul>
     </div>
   </template>
   
-  
 <script>
-export default {
-  name: 'App',
-  components: {
-    InicioSesion
-  }
-}
+    export default {
+        name: 'InicioSesion',
+        props: {
+            msg1: String
+        }
+    };
 </script>
