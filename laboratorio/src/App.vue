@@ -1,18 +1,20 @@
 <template>
-  <div class="Contenedor">
-    <HelloWorld msg="TechReserve"/>    
-    <img alt="Vue logo" src="./assets/Fondo.jpg">
+  <div id="app">
+    <RegistrarLaboratorio />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import './assets/css.css'
+import RegistrarLaboratorio from './components/RegistrarLaboratorio.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RegistrarLaboratorio
   }
-}
+};
 </script>
+
+<style>
+/* Estilos globales o específicos para la aplicación */
+</style>
