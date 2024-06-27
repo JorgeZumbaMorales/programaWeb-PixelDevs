@@ -5,9 +5,9 @@
   </div>
 
   <div>
-    
-  </div>
     <InicioSesion msg1="Iniciar Sesión"/>
+  </div>
+    
   <div>
     <Registrarse msg2="Registrarse"/>
   </div>
@@ -15,16 +15,19 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-//import InicioSesion from './components/InicioSesion.vue'
-//import Registrarse from './components/Registrarse.vue'
+import InicioSesion from '../components/InicioSesion.vue';
+import Registrarse from '../components/Registrarse.vue';
 import './assets/css.css'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    //InicioSesion,
-    //Registrarse
+    InicioSesion,    
+    Registrarse
   }
 }
 </script>
+
+
+
