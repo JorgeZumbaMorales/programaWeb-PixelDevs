@@ -3,6 +3,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 // Importa los componentes que quieres usar en las rutas
+import HelloWorld from './components/HelloWorld.vue'
 import InicioSesion from '../components/InicioSesion.vue';
 import Registrarse from '../components/Registrarse.vue';
 
@@ -11,23 +12,23 @@ Vue.use(VueRouter);
 
 // Define tus rutas
 const routes = [
+    {
+        path: '/HelloWord',
+        name: 'HelloWord',
+        component: HelloWorld
+      },
   {
-    path: '/',
-    redirect: '/inicio-sesion' // Redirige a inicio-sesion por defecto
-  },
-  {
-    path: '/inicio-sesion',
-    name: 'InicioSesion',
+    path: '/iniciosesion',
+    name: 'inicioSesion',
     component: InicioSesion
   },
   {
     path: '/registrarse',
-    name: 'Registrarse',
+    name: 'registrarse',
     component: Registrarse
   }
 ];
 
-// Crea una nueva instancia de VueRouter
 const router = new VueRouter({
   mode: 'history', // Modo de historial para URLs limpias (requiere configuración adicional en el servidor)
   base: process.env.BASE_URL,
