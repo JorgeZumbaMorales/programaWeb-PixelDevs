@@ -1,17 +1,16 @@
 <template>
     <div class="Registrarse">
       <h1>{{ msg2 }}</h1>
-      <p>
-        Sistema de Reserva y Gestión de Laboratorios de Computación
-      </p>
+      <p>Formulario de Registro</p>
+      <router-link to="/inicio-sesion">Iniciar Sesión</router-link>
     </div>
   </template>
   
-<script>
+  <script>
   export default {
-    name: 'App',
-    components: {
-      InicioSesion
+    name: 'Registrarse',
+    props: {
+      msg2: String
     }
-  }
-</script>
+  };
+  </script> 

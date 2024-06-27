@@ -5,11 +5,11 @@
   </div>
 
   <div>
-    
+    <InicioSesion msg1="Iniciar Sesión"/>
   </div>
-    <Sesion msg1="Iniciar Sesión"/>
+    
   <div>
-    <Registro msg2="Registrarse"/>
+    <Registrarse msg2="Registrarse"/>
   </div>
 </template>
 
