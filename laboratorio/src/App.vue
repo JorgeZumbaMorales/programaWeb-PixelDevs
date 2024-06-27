@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/Fondo.jpg">
-  <HelloWorld msg="TechReserve"/>
+  <div class="Contenedor">
+    <HelloWorld msg="TechReserve"/>    
+    <img alt="Vue logo" src="./assets/Fondo.jpg">
+  </div>
+
+  <div>
+    
+  </div>
+    <Sesion msg1="Iniciar Sesión"/>
+  <div>
+    <Registro msg2="Registrarse"/>
+  </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import InicioSesion from './components/InicioSesion.vue'
+import Registrarse from './components/Registrarse.vue'
+import './assets/css.css'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    InicioSesion,
+    Registrarse
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
