@@ -1,30 +1,43 @@
 <template>
-  <div class="Contenedor">
-    <HelloWorld msg="TechReserve"/>    
-    <img alt="Vue logo" src="./assets/Fondo.jpg">
-  </div>
+  <div id="app">
+    <div class="navbar">
+      <!-- Utiliza <router-link> para navegar -->
+      <router-link to="/inicio-sesion">Iniciar Sesión</router-link>
+      <router-link to="/registrarse">Registrarse</router-link>
+    </div>
 
-  <div>
-    
-  </div>
-    <InicioSesion msg1="Iniciar Sesión"/>
-  <div>
-    <Registrarse msg2="Registrarse"/>
+    <!-- Componente dinámico que cambiará según la ruta actual -->
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-//import InicioSesion from './components/InicioSesion.vue'
-//import Registrarse from './components/Registrarse.vue'
-import './assets/css.css'
+import Vue from 'vue';
+import router from './router';
 
 export default {
   name: 'App',
+  //
+  router,
+  //
   components: {
-    HelloWorld,
-    //InicioSesion,
-    //Registrarse
+    // Componentes adicionales aquí si es necesario
   }
-}
+};
 </script>
+
+<style>
+/* Estilos globales de tu aplicación */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.navbar a:hover {
+  color: yellow;
+}
+</style>
